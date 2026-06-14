@@ -401,8 +401,15 @@
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .services-grid { grid-template-columns: 1fr; }
     .reviews-grid { grid-template-columns: 1fr; }
-    .hero-buttons { flex-direction: column; max-width: 260px; }
+    .hero-buttons { flex-direction: column; max-width: 260px; margin: 0 auto; }
     .btn { text-align: center; }
+    #hero { justify-content: center; padding: 100px 6vw 60px; }
+    .hero-title { font-size: clamp(1.8rem, 7vw, 2.8rem); }
+    .hero-body { font-size: 0.92rem; }
+    .hero-eyebrow { margin-bottom: 12px; }
+    #services .services-header-grid { flex-direction: column; gap: 32px; }
+    #services .services-header-grid > div:last-child { flex: none; width: 100%; }
+    #services .services-header-grid img { aspect-ratio: 4/3; width: 100%; }
   }
 </style>
 </head>
@@ -465,7 +472,7 @@
 
 <!-- SERVICES -->
 <section id="services">
-  <div style="display:flex; align-items:center; gap:60px; margin-bottom:64px;">
+  <div class="services-header-grid" style="display:flex; align-items:center; gap:60px; margin-bottom:64px;">
     <div style="flex:1;">
       <p class="section-eyebrow">Программы</p>
       <h2 class="section-title">Три столпа<br><em>трансформации</em></h2>
